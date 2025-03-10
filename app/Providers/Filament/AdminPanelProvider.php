@@ -34,12 +34,12 @@ class AdminPanelProvider extends PanelProvider
                 'primary' => Color::Amber,
             ])
             ->assets([
-                Css::make('filament-forms', secure_asset('css/filament/forms/forms.css')),
-                Css::make('filament-support', secure_asset('css/filament/support/support.css')),
-                Js::make('filament-notifications', secure_asset('js/filament/notifications/notifications.js')),
-                Js::make('filament-support-js', secure_asset('js/filament/support/support.js')),
-                Js::make('filament-echo', secure_asset('js/filament/filament/echo.js')),
-                Js::make('filament-app', secure_asset('js/filament/filament/app.js')),
+                Css::make('filament-forms', 'https://ujm.affalximam.my.id/css/filament/forms/forms.css'),
+                Css::make('filament-support', 'https://ujm.affalximam.my.id/css/filament/support/support.css'),
+                Js::make('filament-notifications', 'https://ujm.affalximam.my.id/js/filament/notifications/notifications.js'),
+                Js::make('filament-support-js', 'https://ujm.affalximam.my.id/js/filament/support/support.js'),
+                Js::make('filament-echo', 'https://ujm.affalximam.my.id/js/filament/filament/echo.js'),
+                Js::make('filament-app', 'https://ujm.affalximam.my.id/js/filament/filament/app.js'),
             ])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
