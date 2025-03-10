@@ -33,14 +33,6 @@ class AdminPanelProvider extends PanelProvider
             ->colors([
                 'primary' => Color::Amber,
             ])
-            ->assets([
-                Css::make('filament-forms', 'https://ujm.affalximam.my.id/css/filament/forms/forms.css'),
-                Css::make('filament-support', 'https://ujm.affalximam.my.id/css/filament/support/support.css'),
-                Js::make('filament-notifications', 'https://ujm.affalximam.my.id/js/filament/notifications/notifications.js'),
-                Js::make('filament-support-js', 'https://ujm.affalximam.my.id/js/filament/support/support.js'),
-                Js::make('filament-echo', 'https://ujm.affalximam.my.id/js/filament/filament/echo.js'),
-                Js::make('filament-app', 'https://ujm.affalximam.my.id/js/filament/filament/app.js'),
-            ])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->pages([
