@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\URL;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -20,8 +21,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         if ($this->app->environment('production')) {
-            \Illuminate\Support\Facades\URL::forceScheme('https');
-            config(['session.secure' => true]); // Paksa session HTTPS
+            URL::forceScheme('https');
         }
     }
 }
